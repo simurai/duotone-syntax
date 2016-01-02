@@ -1,16 +1,13 @@
 {
-  "name": "duotone-dark-syntax",
+  "name": "duotone-syntax",
   "theme": "syntax",
   "version": "0.4.0",
-  "description": "A dark DuoTone syntax theme",
+  "description": "Master template for DuoTone syntax themes",
   "keywords": [
-    "dark",
-    "purple",
-    "gold",
     "duotone",
     "syntax"
   ],
-  "repository": "https://github.com/simurai/duotone-dark-syntax",
+  "repository": "https://github.com/simurai/duotone-syntax",
   "license": "MIT",
   "engines": {
     "atom": ">1.0.0"

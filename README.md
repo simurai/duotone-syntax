@@ -1,55 +1,47 @@
-# DuoTone dark
+> Note: This theme isn't published. It serves as the master "template" for all DuoTone themes.
+
+# DuoTone Syntax (master)
 
 A double-hue syntax theme for Atom.
 
-<img alt="DuoTone dark" sizes="272px"
-  src="https://cloud.githubusercontent.com/assets/378023/6996305/4d567190-dbbb-11e4-8ae8-4be016a85c68.png"
-  srcset="https://cloud.githubusercontent.com/assets/378023/6995981/3d455d76-dba6-11e4-9740-23202591201b.png 544w">
+![duotone](https://cloud.githubusercontent.com/assets/378023/11769688/753483be-a230-11e5-9193-51db5e77ce6b.png)
 
-DuoTone dark uses only 2 hues (purple & gold) and has 7 shades in total. It __tones down__ less important parts (like punctuation and brackets) and highlights only the __important__ ones. This leads to a more calm color scheme, but still lets you find the stuff you're looking for.
-
-<img alt="CSS in DuoTone dark" sizes="780px"
-  src="https://cloud.githubusercontent.com/assets/378023/6996868/871b6440-dbdd-11e4-834e-b28363026d0c.png"
-  srcset="https://cloud.githubusercontent.com/assets/378023/6996081/4dc96804-dbab-11e4-95f9-cc06a67452cb.png 1560w">
-
-<img alt="HTML in DuoTone dark" sizes="780px"
-  src="https://cloud.githubusercontent.com/assets/378023/6996874/aee76b40-dbdd-11e4-95e1-a40258a50c26.png"
-  srcset="https://cloud.githubusercontent.com/assets/378023/6996875/b2160e02-dbdd-11e4-913e-7dc006437d94.png 1560w">
-
-> The font in the screenshot is `Fira Mono`. You can download it from https://github.com/mozilla/Fira
+DuoTone themes use only 2 hues (7 shades in total). It __tones down__ less important parts (like punctuation and brackets) and highlights only the __important__ ones. This leads to a more calm color scheme, but still lets you find the stuff you're looking for.
 
 
-### Currently tested and optimized for these languages:
+## Language support
 
-- C
-- Clojure
-- CoffeeScript
-- C#
-- CSS
-- GF Markdown
-- Go
-- Haskell
-- HTML
-- Java
-- JavaScript
-- JSON
-- Less
-- Perl
-- PHP
-- Python
-- Ruby
-- SASS
-- SCSS
-- Stylus
-- (La-)TeX
-- XML
-- YAML
+DuoTone themes are optimized for many languages:
 
-More optimization to come..
+> C, Clojure, CoffeeScript, C#, CSS, GF Markdown, Go, Haskell, HTML, Java, JavaScript, JSON, Less, Perl, PHP, Python, Ruby, SASS, SCSS, Stylus, XML, YAML...
 
-### Issues and contributing
+More optimizations to come. See the growing list of [all languages](/styles/languages).
 
-If you would like to create a new __Issue__ or __PR__, please do so in:
 
-- __this repo__ if it's about __color__ changes, like in `colors.less` or `syntax-variables.less`.
-- __[DuoTone master template](https://github.com/simurai/duotone-syntax)__ if it's about __everything else__, like in improving language support. Changes will trickle down into this theme too.
+## Variations
+
+Here a list with [all DuoTone themes](https://atom.io/themes/search?utf8=%E2%9C%93&q=keyword:duotone). Or at least the ones that have the `duotone` keyword added. :grin:
+
+
+## Create your own DuoTone theme
+
+Here a guide how to create your own DuoTone version.
+
+1. Clone this repo.
+2. Rename it (folder, package.json, etc).
+3. Change the colors in `styles/colors.less`.
+4. Publish!
+
+
+## Keep your DuoTone theme up to date
+
+You can always watch this repo to get notified about changes and manually apply or cherry pick them into your theme too.
+
+Or once in while, just pull the latest version of this repo and drop it onto your theme. Then commit everything except
+
+- `styles/colors.less`
+- `LICENSE`
+- `package.json`
+- `README.md`
+
+Of course, if you make changes to one of the other files (like `styles/syntax-variables.less`) it will be overridden. So you might wanna make a note which files got customized. Upstream contributions are very welcomed too.
