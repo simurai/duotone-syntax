@@ -11,6 +11,13 @@
   &.markup {
     .uno-2();
 
+    &.bold   { .bold(); }
+    &.italic { .italic(); }
+    &.strike {
+      .uno-4();
+      text-decoration: line-through;
+    }
+
     &.raw {
       .duo-1(); // Fenced code blocks
     }
@@ -50,6 +57,4 @@
   &.heading-5 { .uno-3(); }
   &.heading-6 { .uno-4(); }
 
-  &.bold   { .bold(); }
-  &.italic { .italic(); }
 }
