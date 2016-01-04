@@ -4,13 +4,21 @@
   .uno-1();
   .punctuation-mixin();
 
-  &.markup,
-  & .link {
+  .link {
     .uno-2();
   }
-  &.markup.raw,
-  &.markup .support {
-    .duo-3();
+
+  &.markup {
+    .uno-2();
+
+    &.raw {
+      .duo-1(); // Fenced code blocks
+    }
+
+    &.raw .support,
+    &.code .support {
+      .uno-4(); // Fenced code blocks
+    }
   }
 
   &.variable,
