@@ -32,6 +32,8 @@ Here a guide how to create your own DuoTone version.
 3. Change the colors in `styles/colors.less`.
 4. Publish!
 
+Here the [Sketch template](https://github.com/simurai/duotone-syntax/files/106441/DuoTone.zip) to create screenshots.
+
 
 ## Keep your DuoTone theme up to date
 
