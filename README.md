@@ -20,22 +20,24 @@ More optimizations to come. See the growing list of [all languages](/styles/lang
 
 ## Variations
 
-Here a list with [all DuoTone themes](https://atom.io/themes/search?utf8=%E2%9C%93&q=keyword:duotone). Or at least the ones that have the `duotone` keyword added. :grin:
+Here a list for all [DuoTone themes](https://atom.io/themes/search?utf8=%E2%9C%93&q=keyword:duotone). Or at least the ones that have the `duotone` keyword added. :grin:
 
 
 ## Create your own DuoTone theme
 
-Here a guide how to create your own DuoTone version.
+Follow the short guide how to create your own DuoTone version.
 
 1. Clone this repo.
 2. Rename it (folder, package.json, etc).
 3. Change the colors in `styles/colors.less`.
 4. Publish!
 
-Here the [Sketch template](https://github.com/simurai/duotone-syntax/files/106441/DuoTone.zip) to create screenshots.
+For more help, feel free to open a new issue.
+
+To create __screenshots__ you can use this [Sketch template](https://github.com/simurai/duotone-syntax/files/106441/DuoTone.zip).
 
 
-## Keep your DuoTone theme up to date
+#### Keep your DuoTone theme up to date
 
 You can always watch this repo to get notified about changes and manually apply or cherry pick them into your theme too.
 
