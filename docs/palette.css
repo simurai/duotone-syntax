@@ -4,6 +4,7 @@
 
 html {
   height: 100%;
+  font-size: 18px;
   font-family: 'BlinkMacSystemFont', 'Lucida Grande', 'Segoe UI', Ubuntu, Cantarell, sans-serif;
 }
 
@@ -24,14 +25,15 @@ a {
 /* Header ------------- */
 
 header {
-  padding: 10vh 0 5vh 0;
+  padding-top: 6em;
 }
 
 .logo {
   display: block;
-  width: 10em;
+  width: 12em;
   margin: 0 auto;
-  padding: 2em 0;
+  padding: 4em 0;
+  font-size: inherit;
   font-weight: 700;
   line-height: 0.9;
   text-align: center;
@@ -59,10 +61,9 @@ header {
 /* Palette ------------- */
 
 .palette {
-  padding: 4em 0;
+  padding: 2em 0 6em 0;
   max-width: 20em;
   margin: 0 auto;
-  font-size: 1.4em;
   text-align: center;
 }
 
@@ -85,9 +86,16 @@ header {
   background-color: inherit;
 }
 
-.palette-color.duo-1,
-.palette-color.bg {
+.palette-color.duo-1 {
   margin-top: 1em;
+}
+
+.palette-color.bg {
+  position: fixed;
+  top: .5em;
+  right: 2em;
+  transform: rotate(-90deg);
+  transform-origin: bottom right;
 }
 
 .palette-color p,
@@ -112,19 +120,19 @@ header {
   font-family: 'Fira Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
   max-width: 24em;
   margin: 0 auto;
-  font-size: 1.2em;
   line-height: 1.5;
 }
 
 pre.code + .code {
-  border-top: 1px solid hsla(0,0%,100%,.1);
+  border-top: 1px dashed hsla(0,0%,100%,.1);
 }
 
 
 /* Footer ------------- */
 
 footer {
-  padding: 4em 0;
+  font-size: .8em;
+  padding: 4rem 0;
   text-align: center;
 }
 
@@ -133,7 +141,6 @@ footer .code {
   padding: .4em .8em;
   margin-top: 1em;
   border-radius: .2em;
-  font-size: 1em;
+  font-size: inherit;
   border: 1px solid hsla(0,0%,100%,.1);
-  /*background-color: hsla(0,0%,0%,.1);*/
 }
