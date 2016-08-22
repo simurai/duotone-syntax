@@ -10,7 +10,7 @@ function toHex(int) {
     return hex.length == 1 ? "0" + hex : hex;
 }
 
-colors = document.getElementsByClassName('color');
+colors = document.getElementsByClassName('palette-color');
 editor = document.getElementsByTagName('atom-text-editor')[0];
 for (var i = 0; i < colors.length; i++) {
   if (i == colors.length - 1) {

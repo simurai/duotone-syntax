@@ -17,7 +17,9 @@ atom-text-editor {
   min-height: 100%;
 }
 
-
+a {
+  text-decoration: none;
+}
 
 /* Header ------------- */
 
@@ -57,18 +59,18 @@ header {
 /* Palette ------------- */
 
 .palette {
-  padding: 2em;
+  padding: 4em 0;
   max-width: 20em;
   margin: 0 auto;
   font-size: 1.4em;
   text-align: center;
 }
 
-.color {
+.palette-color {
   font-family: 'Fira Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
 }
 
-.color:before {
+.palette-color:before {
   content: "";
   display: inline-block;
   width: .8em;
@@ -77,28 +79,61 @@ header {
   vertical-align: middle;
   background-color: currentColor;
 }
-.color.bg:before {
+.palette-color.bg:before {
   box-sizing: border-box;
   border: 2px solid hsla(0,0%,100%,.1);
   background-color: inherit;
 }
 
-.color.duo-1,
-.color.bg {
+.palette-color.duo-1,
+.palette-color.bg {
   margin-top: 1em;
 }
 
-.color p,
-.color span {
+.palette-color p,
+.palette-color span {
   display: inline-block;
   margin: 0 .5em;
   vertical-align: middle;
 }
 
 /* hover */
-.color span {
+.palette-color span {
   opacity: .2;
 }
-.color:hover span {
+.palette-color:hover span {
   opacity: 1;
+}
+
+
+/* Code ------------- */
+
+.code {
+  font-family: 'Fira Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+  max-width: 24em;
+  margin: 0 auto;
+  font-size: 1.2em;
+  line-height: 1.5;
+}
+
+pre.code + .code {
+  border-top: 1px solid hsla(0,0%,100%,.1);
+}
+
+
+/* Footer ------------- */
+
+footer {
+  padding: 4em 0;
+  text-align: center;
+}
+
+footer .code {
+  display: block;
+  padding: .4em .8em;
+  margin-top: 1em;
+  border-radius: .2em;
+  font-size: 1em;
+  border: 1px solid hsla(0,0%,100%,.1);
+  /*background-color: hsla(0,0%,0%,.1);*/
 }
