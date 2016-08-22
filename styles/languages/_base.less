@@ -1,11 +1,11 @@
 // Language syntax highlighting
 
 // Mixins -----------------------------------
-.punctuation-mixin(@color:@uno-4) {
+.punctuation-mixin() {
   .punctuation,
   .bracket,
   .brace {
-    color: @color;
+    .uno-5();
   }
   .string .punctuation {
     .duo-3();
@@ -18,7 +18,7 @@
 // this basically matches everything without a specific scope
 // so we put it first
 .meta {
-  .uno-4();
+  .uno-5();
 }
 
 .html.elements,
@@ -28,16 +28,20 @@
   .uno-1();
 }
 
-.variable,
 .attribute-name,
 .character.escape {
-  .uno-2();
-}
-
-.support {
   .uno-3();
 }
 
+.support {
+  .uno-4();
+}
+
+// Uno hue -----------------------------------
+
+.variable {
+  .uno-3();
+}
 
 // Duo hue -----------------------------------
 .string,
@@ -58,7 +62,7 @@
 
 // Comments -----------------------------------
 .comment {
-  .uno-4();
+  .uno-5();
   font-style: italic;
 }
 
