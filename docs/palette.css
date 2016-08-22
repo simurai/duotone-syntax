@@ -1,31 +1,104 @@
-.palette {
-  display: table;
-  border-spacing: 10px;
+* {
+  box-sizing: border-box;
 }
-.row {
-  display: table-row;
-}
-.box {
-  background-color: #282833;
-  height: 200px;
-  width: 200px;
-  padding: 1%;
-  text-align: center;
 
-  display: table-cell;
+html {
+  height: 100%;
+  font-family: 'BlinkMacSystemFont', 'Lucida Grande', 'Segoe UI', Ubuntu, Cantarell, sans-serif;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+}
+
+atom-text-editor {
+  display: block;
+  min-height: 100%;
+}
+
+
+
+/* Header ------------- */
+
+header {
+  padding: 10vh 0 5vh 0;
+}
+
+.logo {
+  display: block;
+  width: 10em;
+  margin: 0 auto;
+  padding: 2em 0;
+  font-weight: 700;
+  line-height: 0.9;
+  text-align: center;
+  border: 2px solid hsla(0,0%,100%,.1);
+}
+.logo-row {
+  display: block;
+  text-transform: uppercase
+}
+.logo-row:nth-child(1) { font-size: 2.5em; }
+.logo-row:nth-child(2) { font-size: 2em; }
+
+.logo-name {
+  display: block;
+  font-size: 1.5em;
+  font-style: italic;
+  font-weight: 300;
+  margin-top: 1em;
+}
+
+
+
+
+
+/* Palette ------------- */
+
+.palette {
+  padding: 2em;
+  max-width: 20em;
+  margin: 0 auto;
+  font-size: 1.4em;
+  text-align: center;
+}
+
+.color {
+  font-family: 'Fira Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+}
+
+.color:before {
+  content: "";
+  display: inline-block;
+  width: .8em;
+  height: 1.6em;
+  margin-right: 1em;
+  vertical-align: middle;
+  background-color: currentColor;
+}
+.color.bg:before {
+  box-sizing: border-box;
+  border: 2px solid hsla(0,0%,100%,.1);
+  background-color: inherit;
+}
+
+.color.duo-1,
+.color.bg {
+  margin-top: 1em;
+}
+
+.color p,
+.color span {
+  display: inline-block;
+  margin: 0 .5em;
   vertical-align: middle;
 }
-.box p {
-  font-family: monospace;
-  font-size: 250%;
-  font-weight: bold;
-  margin: 0;
+
+/* hover */
+.color span {
+  opacity: .2;
 }
-.box span {
-  display: block;
-  font-size: 50%;
-}
-h2 {
-  clear: both;
-  float: none;
+.color:hover span {
+  opacity: 1;
 }

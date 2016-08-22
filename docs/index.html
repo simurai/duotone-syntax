@@ -8,34 +8,38 @@
   </head>
 
   <body>
-    <h1>DuoTone Pallete</h1>
+    <atom-text-editor>
+      <header>
+        <h1 class="logo">
+          <div class="logo-row">
+            <span class="duo-1">D</span><!--
+        --><span class="duo-2">u</span><!--
+        --><span class="duo-3">o</span>
+          </div>
+          <div class="logo-row">
+            <span class="uno-1">T</span><!--
+        --><span class="uno-2">o</span><!--
+        --><span class="uno-3">n</span><!--
+        --><span class="uno-4">e</span>
+          </div>
+          <div class="logo-name uno-4">dark</div>
+        </h1>
+      </header>
 
-    <h2>Background</h2>
-    <div class="palette">
-      <div class="row">
-        <div class="box uno-1"><p>Background</p></div>
-      </div>
-    </div>
+      <section class="palette">
+        <div class="color uno-1">uno-1</div>
+        <div class="color uno-2">uno-2</div>
+        <div class="color uno-3">uno-3</div>
+        <div class="color uno-4">uno-4</div>
 
-    <h2>Uno</h2>
-    <div class="palette">
-      <div class="row">
-        <div class="box uno-1"><p>██ uno-1</p></div>
-        <div class="box uno-2"><p>██ uno-2</p></div>
-        <div class="box uno-3"><p>██ uno-3</p></div>
-        <div class="box uno-4"><p>██ uno-4</p></div>
-      </div>
-    </div>
+        <div class="color duo-1">duo-1</div>
+        <div class="color duo-2">duo-2</div>
+        <div class="color duo-3">duo-3</div>
 
-    <h2>Duo</h2>
-    <div class="palette">
-      <div class="row">
-        <div class="box duo-1"><p>██ duo-1</p></div>
-        <div class="box duo-2"><p>██ duo-2</p></div>
-        <div class="box duo-3"><p>██ duo-3</p></div>
-      </div>
-    </div>
+        <div class="color bg duo-3">bgrnd</div>
+      </section>
 
+    </atom-text-editor>
     <script src="./palette.js" charset="utf-8"></script>
   </body>
 </html>

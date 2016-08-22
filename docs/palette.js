@@ -10,15 +10,16 @@ function toHex(int) {
     return hex.length == 1 ? "0" + hex : hex;
 }
 
-
-boxes = document.getElementsByClassName('box');
-for (var i = 0; i < boxes.length; i++) {
-  if (i == 0) {
-    rgb_col = window.getComputedStyle(boxes[i]).backgroundColor;
+colors = document.getElementsByClassName('color');
+editor = document.getElementsByTagName('atom-text-editor')[0];
+for (var i = 0; i < colors.length; i++) {
+  if (i == colors.length - 1) {
+    // for the last color, use the background color
+    rgb_col = window.getComputedStyle(editor).backgroundColor;
   } else {
-    rgb_col = window.getComputedStyle(boxes[i]).color;
+    rgb_col = window.getComputedStyle(colors[i]).color;
   }
   hex_col = parseColor(rgb_col);
-  text = boxes[i].textContent;
-  boxes[i].innerHTML = '<p>' + text + '<span>' + rgb_col + '</span><span>' + hex_col.hex + '</span></p>';
+  text = colors[i].textContent;
+  colors[i].innerHTML = '<p>' + text + '</p><span>' + hex_col.hex + '</span>';
 }
