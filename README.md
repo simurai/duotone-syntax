@@ -6,7 +6,7 @@ A double-hue syntax theme for Atom.
 
 ![duotone](https://cloud.githubusercontent.com/assets/378023/11769688/753483be-a230-11e5-9193-51db5e77ce6b.png)
 
-DuoTone themes use only 2 hues (7 shades in total). It __tones down__ less important parts (like punctuation and brackets) and highlights only the __important__ ones. This leads to a more calm color scheme, but still lets you find the stuff you're looking for.
+DuoTone themes use only 2 hues (8 shades in total). It __tones down__ less important parts (like punctuation and brackets) and highlights only the __important__ ones. This leads to a more calm color scheme, but still lets you find the stuff you're looking for.
 
 
 ## Language support
