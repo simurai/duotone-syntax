@@ -106,6 +106,9 @@ atom-text-editor .fold-marker:after,
 .uno-4 {
   color: #65657b;
 }
+.uno-5 {
+  color: #4c4c5d;
+}
 .duo-1 {
   color: #feb18a;
 }
@@ -116,7 +119,7 @@ atom-text-editor .fold-marker:after,
   color: #655953;
 }
 .meta {
-  color: #65657b;
+  color: #4c4c5d;
 }
 .html.elements,
 .entity,
@@ -124,12 +127,14 @@ atom-text-editor .fold-marker:after,
 .function-call {
   color: #ebebff;
 }
-.variable,
 .attribute-name,
 .character.escape {
-  color: #aaaaee;
+  color: #8383af;
 }
 .support {
+  color: #65657b;
+}
+.variable {
   color: #8383af;
 }
 .string,
@@ -144,13 +149,13 @@ atom-text-editor .fold-marker:after,
 .punctuation,
 .bracket,
 .brace {
-  color: #65657b;
+  color: #4c4c5d;
 }
 .string .punctuation {
   color: #655953;
 }
 .comment {
-  color: #65657b;
+  color: #4c4c5d;
   font-style: italic;
 }
 .bold {
@@ -169,7 +174,7 @@ atom-text-editor .fold-marker:after,
 .c .block .bracket,
 .c .parens .brace,
 .c .block .brace {
-  color: #65657b;
+  color: #4c4c5d;
 }
 .c .parens .string .punctuation,
 .c .block .string .punctuation {
@@ -182,25 +187,39 @@ atom-text-editor .fold-marker:after,
   color: #feb18a;
 }
 .source.clojure .expression .punctuation {
-  color: #65657b;
+  color: #4c4c5d;
 }
 .source.clojure .symbol {
   color: #aaaaee;
 }
 .source.clojure .vector {
-  color: #8383af;
+  color: #65657b;
 }
 .coffee.source {
-  color: #8383af;
+  color: #65657b;
 }
 .source.cs .meta {
-  color: #8383af;
+  color: #65657b;
 }
 .source.cs .method {
   color: #aaaaee;
 }
 .css.source {
-  color: #65657b;
+  color: #4c4c5d;
+}
+.css.attribute-name.id,
+.css.attribute-name.class,
+.css.attribute-name.parent-selector {
+  color: #ebebff;
+}
+.css.unit {
+  color: #d88b64;
+}
+.css.function {
+  color: #655953;
+}
+.css.punctuation.terminator {
+  color: #655953;
 }
 .css.at-rule {
   color: #ebebff;
@@ -208,18 +227,13 @@ atom-text-editor .fold-marker:after,
 .css.at-rule .keyword.punctuation {
   color: inherit;
 }
-.css.attribute-name.id,
-.css.attribute-name.class,
-.css.attribute-name.parent-selector {
-  color: #ebebff;
-}
 .gfm {
   color: #ebebff;
 }
 .gfm .punctuation,
 .gfm .bracket,
 .gfm .brace {
-  color: #65657b;
+  color: #4c4c5d;
 }
 .gfm .string .punctuation {
   color: #655953;
@@ -237,7 +251,7 @@ atom-text-editor .fold-marker:after,
   font-style: italic;
 }
 .gfm.markup.strike {
-  color: #65657b;
+  color: #4c4c5d;
   text-decoration: line-through;
 }
 .gfm.markup.raw {
@@ -245,10 +259,10 @@ atom-text-editor .fold-marker:after,
 }
 .gfm.markup.raw .support,
 .gfm.markup.code .support {
-  color: #65657b;
+  color: #4c4c5d;
 }
 .gfm.comment {
-  color: #65657b;
+  color: #4c4c5d;
 }
 .gfm.comment.quote {
   color: #aaaaee;
@@ -258,7 +272,7 @@ atom-text-editor .fold-marker:after,
 }
 .gfm.table .border,
 .gfm.table .pipe {
-  color: #65657b;
+  color: #4c4c5d;
 }
 .gfm.variable,
 .gfm.entity {
@@ -283,28 +297,28 @@ atom-text-editor .fold-marker:after,
 .haskell.source .punctuation,
 .haskell.source .bracket,
 .haskell.source .brace {
-  color: #65657b;
+  color: #4c4c5d;
 }
 .haskell.source .string .punctuation {
   color: #655953;
 }
 .html.meta {
-  color: #65657b;
+  color: #4c4c5d;
 }
 .html.text {
-  color: #8383af;
+  color: #65657b;
 }
 .html .string .id {
   color: #feb18a;
 }
 .jade.text {
-  color: #8383af;
+  color: #65657b;
 }
 .jade .meta.control.flow {
   color: #aaaaee;
 }
 .jade .constant.name.attribute.tag {
-  color: #65657b;
+  color: #4c4c5d;
 }
 .jade .attribute-name.id {
   color: #feb18a;
@@ -315,13 +329,13 @@ atom-text-editor .fold-marker:after,
 .java .method .punctuation,
 .java .method .bracket,
 .java .method .brace {
-  color: #65657b;
+  color: #4c4c5d;
 }
 .java .method .string .punctuation {
   color: #655953;
 }
 .java .dereference {
-  color: #65657b;
+  color: #4c4c5d;
 }
 .js.source {
   color: #aaaaee;
@@ -329,7 +343,7 @@ atom-text-editor .fold-marker:after,
 .js.source .punctuation,
 .js.source .bracket,
 .js.source .brace {
-  color: #65657b;
+  color: #4c4c5d;
 }
 .js.source .string .punctuation {
   color: #655953;
@@ -338,19 +352,19 @@ atom-text-editor .fold-marker:after,
   color: #aaaaee;
 }
 .json .string .punctuation {
-  color: #65657b;
+  color: #4c4c5d;
 }
 .json .value > .string {
   color: #feb18a;
 }
 .json .value > .string .punctuation {
-  color: #65657b;
+  color: #4c4c5d;
 }
 .json .value .constant {
   color: #d88b64;
 }
 .less.variable:first-child {
-  color: #ebebff;
+  color: #aaaaee;
 }
 .less .mixin {
   color: #d88b64;
@@ -361,7 +375,7 @@ atom-text-editor .fold-marker:after,
 .mediawiki .punctuation,
 .mediawiki .bracket,
 .mediawiki .brace {
-  color: #65657b;
+  color: #4c4c5d;
 }
 .mediawiki .string .punctuation {
   color: #655953;
@@ -384,7 +398,7 @@ atom-text-editor .fold-marker:after,
 .mediawiki .pipe,
 .mediawiki .link,
 .mediawiki .tag {
-  color: #65657b;
+  color: #4c4c5d;
 }
 .php .string-contents {
   color: #feb18a;
@@ -404,7 +418,7 @@ atom-text-editor .fold-marker:after,
   color: #aaaaee;
 }
 .sass.property-value .punctuation {
-  color: #65657b;
+  color: #4c4c5d;
 }
 .sass.variable.parameter.url {
   color: #feb18a;
@@ -428,7 +442,7 @@ atom-text-editor .fold-marker:after,
   color: #aaaaee;
 }
 .scss.property-value .punctuation {
-  color: #65657b;
+  color: #4c4c5d;
 }
 .scss.variable.parameter.url {
   color: #feb18a;
@@ -438,10 +452,10 @@ atom-text-editor .fold-marker:after,
   color: #ebebff;
 }
 .slim.meta {
-  color: #65657b;
+  color: #4c4c5d;
 }
 .slim.text {
-  color: #8383af;
+  color: #65657b;
 }
 .slim .string .id {
   color: #feb18a;
@@ -465,5 +479,5 @@ atom-text-editor .fold-marker:after,
   color: #d88b64;
 }
 .yaml .punctuation {
-  color: #65657b;
+  color: #4c4c5d;
 }

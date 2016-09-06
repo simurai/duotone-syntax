@@ -4,10 +4,11 @@
 
 A double-hue syntax theme for Atom.
 
-![duotone](https://cloud.githubusercontent.com/assets/378023/11769688/753483be-a230-11e5-9193-51db5e77ce6b.png)
+![duotone](docs/screenshot.png)
 
 DuoTone themes use only 2 hues (8 shades in total). It __tones down__ less important parts (like punctuation and brackets) and highlights only the __important__ ones. This leads to a more calm color scheme, but still lets you find the stuff you're looking for.
 
+![screenshot code](docs/screenshot-code.png)
 
 ## Language support
 
@@ -20,7 +21,7 @@ More optimizations to come. See the growing list of [all languages](/styles/lang
 
 ## Variations
 
-Here a list for all [DuoTone themes](https://atom.io/themes/search?utf8=%E2%9C%93&q=keyword:duotone). Or at least the ones that have the `duotone` keyword added. :grin:
+Here a list of all [DuoTone themes](https://atom.io/themes/search?utf8=%E2%9C%93&q=keyword:duotone). Or at least the ones that have the `duotone` keyword added. :grin:
 
 
 ## Create your own DuoTone theme
