@@ -25,6 +25,7 @@ a {
 /* Header ------------- */
 
 header {
+  position: relative;
   padding-top: 6em;
 }
 
@@ -48,12 +49,36 @@ header {
 
 .logo-name {
   display: block;
-  font-size: 1.5em;
+  font-size: 1.2em;
   font-style: italic;
   font-weight: 300;
-  margin-top: 1em;
+  margin-top: 2em;
 }
 
+
+nav a {
+  position: absolute;
+  top: 12em;
+  width: 4em;
+  height: 4em;
+  border: 2px solid hsla(0,0%,100%,.05);
+  transform: rotate(45deg);
+  transition: border-color 1s;
+}
+
+header nav a:hover { border-color: hsla(0,0%,100%,.1); transition-duration: .1s; }
+header nav a:active { border-color: hsla(0,0%,100%,.2); transition-duration: .05s; }
+
+.prev {
+  left: 25vw;
+  border-right: none;
+  border-top: none;
+}
+.next {
+  right: 25vw;
+  border-left: none;
+  border-bottom: none;
+}
 
 
 
@@ -92,10 +117,11 @@ header {
 
 .palette-color.bg {
   position: fixed;
-  top: .5em;
-  right: 2em;
-  transform: rotate(-90deg);
-  transform-origin: bottom right;
+  right: 4.2em;
+  bottom: 3em;
+  transform: rotate(90deg);
+  transform-origin: top right;
+  font-size: .75em;
 }
 
 .palette-color p,
@@ -105,20 +131,12 @@ header {
   vertical-align: middle;
 }
 
-/* hover */
-.palette-color span {
-  opacity: .2;
-}
-.palette-color:hover span {
-  opacity: 1;
-}
-
 
 /* Code ------------- */
 
 .code {
   font-family: 'Fira Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
-  max-width: 24em;
+  max-width: 28em;
   margin: 0 auto;
   line-height: 1.5;
 }
@@ -139,4 +157,21 @@ footer .code {
   border-radius: .2em;
   font-size: inherit;
   border: 1px solid hsla(0,0%,100%,.1);
+}
+
+/* Nav ------------- */
+
+.github {
+  display: inline-block;
+  margin-top: 4rem;
+  opacity: .1;
+  transition: opacity 1.2s;
+}
+.github:hover {
+  opacity: 1;
+  transition-duration: .12s;
+}
+
+.github svg {
+  fill: currentColor;
 }
