@@ -90,7 +90,7 @@ header nav a:active { border-color: hsla(0,0%,100%,.2); transition-duration: .05
 /* Palette ------------- */
 
 .palette {
-  padding: 2em 0 6em 0;
+  padding: 6em 0;
   max-width: 20em;
   margin: 0 auto;
   text-align: center;
