@@ -144,6 +144,9 @@ header nav a:active { border-color: hsla(0,0%,100%,.2); transition-duration: .05
   margin: 0 auto;
   line-height: 1.5;
 }
+.code + .code {
+  margin-top: 4rem;
+}
 
 
 /* Footer ------------- */
