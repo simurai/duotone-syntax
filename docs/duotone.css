@@ -207,6 +207,9 @@ atom-text-editor .fold-marker:after,
 .css.source {
   color: #544d60;
 }
+.css.support.property-name {
+  color: #ae91e8;
+}
 .css.attribute-name.id,
 .css.attribute-name.class,
 .css.attribute-name.parent-selector {
@@ -480,28 +483,4 @@ atom-text-editor .fold-marker:after,
 }
 .yaml .punctuation {
   color: #544d60;
-}
-atom-text-editor::shadow [data-screen-row="1"] .text {
-  color: #f1ebff;
-}
-atom-text-editor::shadow [data-screen-row="2"] .text {
-  color: #cab2fa;
-}
-atom-text-editor::shadow [data-screen-row="3"] .text {
-  color: #ae91e8;
-}
-atom-text-editor::shadow [data-screen-row="4"] .text {
-  color: #715f95;
-}
-atom-text-editor::shadow [data-screen-row="5"] .text {
-  color: #544d60;
-}
-atom-text-editor::shadow [data-screen-row="7"] .text {
-  color: #fec38f;
-}
-atom-text-editor::shadow [data-screen-row="8"] .text {
-  color: #b07745;
-}
-atom-text-editor::shadow [data-screen-row="9"] .text {
-  color: #765f4c;
 }
