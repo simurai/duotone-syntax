@@ -16,7 +16,7 @@ DuoTone themes are optimized for many languages:
 
 > C, Clojure, CoffeeScript, C#, CSS, GF Markdown, Go, Haskell, HTML, Java, JavaScript, JSON, Less, Perl, PHP, Python, Ruby, SASS, SCSS, Stylus, XML, YAML...
 
-More optimizations to come. See the growing list of [all languages](/styles/languages).
+See the list of [all languages](/styles/languages).
 
 
 ## Variations
@@ -33,20 +33,29 @@ Follow the short guide how to create your own DuoTone version.
 3. Change the colors in `styles/colors.less`.
 4. Publish!
 
+Optionally, also
+
+1. Run `docs/update.sh` to update the `docs/index.html` page.
+2. Then replace the screenshots (`docs/screenshot.png` and `docs/screenshot-code.png`) with your version.
+
 For more help, feel free to open a new issue.
-
-To create __screenshots__ you can use this [Sketch template](https://github.com/simurai/duotone-syntax/files/106441/DuoTone.zip).
-
 
 #### Keep your DuoTone theme up to date
 
 You can always watch this repo to get notified about changes and manually apply or cherry pick them into your theme too.
 
-Or once in while, just pull the latest version of this repo and drop it onto your theme. Then commit everything except
+Or you can add this theme as a dependency to your `package.json` file:
 
-- `styles/colors.less`
-- `LICENSE`
-- `package.json`
-- `README.md`
+```json
+"dependencies": {
+  "duotone-syntax": ">=2.0.0 <3.0.0"
+}
+```
 
-Of course, if you make changes to one of the other files (like `styles/syntax-variables.less`) it will be overridden. So you might wanna make a note which files got customized. Upstream contributions are very welcomed too.
+and then import all the language styles in `index.less`:
+
+```less
+// This imports the language styles from the duotone-syntax npm package
+// If you test locally, make sure to first run `apm install`
+@import 'node_modules/duotone-syntax/styles/languages/_index';
+```
