@@ -48,7 +48,7 @@ Or you can add this theme as a dependency to your `package.json` file:
 
 ```json
 "dependencies": {
-  "duotone-syntax": ">=2.0.0 <3.0.0"
+  "duotone-syntax": "^2.0.0"
 }
 ```
 
