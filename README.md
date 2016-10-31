@@ -40,26 +40,6 @@ Follow the short guide how to create your own DuoTone version.
 Optionally, also
 
 1. Run `docs/update.sh` to update the `docs/index.html` page.
-2. Then replace the screenshots (`docs/screenshot.png` and `docs/screenshot-code.png`) with your version.
+2. Then replace the screenshot (`docs/screenshot.png` with your version.
 
 For more help, feel free to open a new issue.
-
-#### Keep your DuoTone theme up to date
-
-You can always watch this repo to get notified about changes and manually apply or cherry pick them into your theme too.
-
-Or you can add this theme as a dependency to your `package.json` file:
-
-```json
-"dependencies": {
-  "duotone-syntax": "^2.0.0"
-}
-```
-
-and then import all the language styles in `index.less`:
-
-```less
-// This imports the language styles from the duotone-syntax npm package
-// If you test locally, make sure to first run `apm install`
-@import 'node_modules/duotone-syntax/styles/languages/_index';
-```
