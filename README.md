@@ -32,9 +32,10 @@ Follow the short guide how to create your own DuoTone version.
 3. Change the colors in `styles/colors.less`.
 4. Publish!
 
-Optionally, also
+Optionally, also update the `docs`. It's a page with all colors and some sample code. It can be used as a GitHub Page, when the `/docs` folder is enabled in the repo settings.
 
-1. Run `docs/update.sh` to update the `docs/index.html` page.
-2. Then replace the screenshot (`docs/screenshot.png` with your version.
+1. Run `docs/update.sh` to update the theme colors.
+2. Replace the `xxx` in `docs/index.html` with your own user and theme name.
+3. Take a screenshot and replace (`docs/screenshot.png`) with your version.
 
 For more help, feel free to open a new issue.
