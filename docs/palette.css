@@ -243,3 +243,20 @@ footer .code {
     margin-top: 4rem;
   }
 }
+
+/* Screenshots ---------------------------------------
+ * Uncomment to clean up
+ * Dimension 1000x660
+**/
+
+/*footer,
+.palette-color.bg {
+  display: none;
+}
+main {
+  display: none;
+  margin-bottom: 6em
+}
+body:not(:hover) nav {
+  display: none;
+}*/
