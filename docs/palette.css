@@ -16,6 +16,7 @@ body {
 atom-text-editor {
   display: block;
   min-height: 100%;
+  overflow: hidden;
 }
 
 a {
@@ -26,14 +27,21 @@ a {
 
 header {
   position: relative;
-  padding-top: 6em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 50em;
+  padding: 2em;
+  text-align: center;
 }
 
 .logo {
   display: block;
-  width: 12em;
-  margin: 0 auto;
-  padding: 4em 0;
+  margin: 2em;
+  width: 15em;
+  padding: 6em 0;
   font-size: inherit;
   font-weight: 700;
   line-height: 0.9;
@@ -60,40 +68,11 @@ header {
 }
 
 
-nav a {
-  position: absolute;
-  top: 12em;
-  width: 4em;
-  height: 4em;
-  border: 2px solid hsla(0,0%,100%,.05);
-  transform: rotate(45deg);
-  transition: border-color 1s;
-}
-
-header nav a:hover { border-color: hsla(0,0%,100%,.1); transition-duration: .1s; }
-header nav a:active { border-color: hsla(0,0%,100%,.2); transition-duration: .05s; }
-
-.prev {
-  left: 25vw;
-  border-right: none;
-  border-top: none;
-}
-.next {
-  right: 25vw;
-  border-left: none;
-  border-bottom: none;
-}
-
-
-
 
 /* Palette ------------- */
 
 .palette {
-  padding: 6em 0;
-  max-width: 20em;
-  margin: 0 auto;
-  text-align: center;
+  margin: 2em;
 }
 
 .palette-color {
@@ -120,12 +99,7 @@ header nav a:active { border-color: hsla(0,0%,100%,.2); transition-duration: .05
 }
 
 .palette-color.bg {
-  position: fixed;
-  right: 4.2em;
-  bottom: 3em;
-  transform: rotate(90deg);
-  transform-origin: top right;
-  font-size: .75em;
+  display: none;
 }
 
 .palette-color p,
@@ -138,22 +112,65 @@ header nav a:active { border-color: hsla(0,0%,100%,.2); transition-duration: .05
 
 /* Code ------------- */
 
+main {
+  padding: 0 2em;
+  margin: 0 auto;
+  max-width: 36em;
+}
+
 .code {
   font-family: 'Fira Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
-  max-width: 28em;
-  margin: 0 auto;
+  font-size: .8em;
   line-height: 1.5;
 }
 .code + .code {
-  margin-top: 4rem;
+  margin-top: 2rem;
 }
+
+
+
+/* Nav ------------- */
+
+
+nav {
+  font-size: .8em;
+  text-align: center;
+}
+
+nav a {
+  display: inline-block;
+  width: 4em;
+  height: 4em;
+  margin: 2rem;
+  border: 2px solid hsla(0,0%,100%,.05);
+  transform: rotate(45deg);
+  transition: border-color 1s;
+}
+
+header nav a:hover { border-color: hsla(0,0%,100%,.1); transition-duration: .1s; }
+header nav a:active { border-color: hsla(0,0%,100%,.2); transition-duration: .05s; }
+
+.prev {
+  left: 8vw;
+  border-right: none;
+  border-top: none;
+}
+.next {
+  right: 8vw;
+  border-left: none;
+  border-bottom: none;
+}
+
+
 
 
 /* Footer ------------- */
 
 footer {
   font-size: .8em;
-  padding: 4rem 0;
+  padding: 2rem;
+  max-width: 36em;
+  margin: 0 auto;
   text-align: center;
 }
 
@@ -166,11 +183,9 @@ footer .code {
   border: 1px solid hsla(0,0%,100%,.1);
 }
 
-/* Nav ------------- */
-
 .github {
   display: inline-block;
-  margin-top: 4rem;
+  margin-top: 2rem;
   opacity: .1;
   transition: opacity 1.2s;
 }
@@ -181,4 +196,50 @@ footer .code {
 
 .github svg {
   fill: currentColor;
+}
+
+
+
+/* Larger screens ------------- */
+
+
+@media (min-width: 1000px) {
+  header {
+    padding: 4em;
+  }
+  .logo,
+  .palette {
+    margin: 4em;
+  }
+  .palette-color.bg {
+    display: block;
+    position: fixed;
+    right: 4.2em;
+    bottom: 3em;
+    transform: rotate(90deg);
+    transform-origin: top right;
+    font-size: .75em;
+  }
+  .code {
+    font-size: 1em;
+  }
+  .code + .code {
+    margin-top: 4rem;
+  }
+  nav a {
+    position: absolute;
+    top: 18em;
+  }
+  .prev {
+    left: 4em;
+  }
+  .next {
+    right: 4em;
+  }
+  footer {
+    padding: 4rem;
+  }
+  .github {
+    margin-top: 4rem;
+  }
 }
