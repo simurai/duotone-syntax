@@ -1,63 +1,63 @@
 // GF MarkDown
 
-.gfm {
+.syntax--gfm {
   .uno-1();
   .punctuation-mixin();
 
-  .link {
+  .syntax--link {
     .uno-2();
   }
 
-  &.markup {
+  &.syntax--markup {
     .uno-2();
 
-    &.bold   { .bold(); }
-    &.italic { .italic(); }
-    &.strike {
+    &.syntax--bold   { .syntax--bold(); }
+    &.syntax--italic { .syntax--italic(); }
+    &.syntax--strike {
       .uno-5();
       text-decoration: line-through;
     }
 
-    &.raw {
+    &.syntax--raw {
       .duo-1(); // Fenced code blocks
     }
 
-    &.raw .support,
-    &.code .support {
+    &.syntax--raw .syntax--support,
+    &.syntax--code .syntax--support {
       .uno-4(); // Fenced code blocks
     }
   }
 
-  &.comment  {
+  &.syntax--comment  {
     .uno-4();
-    &.quote {
+    &.syntax--quote {
       .uno-2();
     }
   }
 
-  &.table {
+  &.syntax--table {
     .duo-1();
 
-    .border,
-    .pipe {
+    .syntax--border,
+    .syntax--pipe {
       .uno-5();
     }
   }
 
-  &.variable,
-  &.entity {
+  &.syntax--variable,
+  &.syntax--entity {
     .duo-1();
   }
-  &.support  { .duo-2(); }
+  &.syntax--support  { .duo-2(); }
 
-  &.heading-1,
-  &.heading-2,
-  &.heading-3 {
+  &.syntax--heading-1,
+  &.syntax--heading-2,
+  &.syntax--heading-3 {
     .duo-1();
   }
-  &.heading-4,
-  &.heading-5,
-  &.heading-6 {
+  &.syntax--heading-4,
+  &.syntax--heading-5,
+  &.syntax--heading-6 {
     .duo-2();
   }
 
