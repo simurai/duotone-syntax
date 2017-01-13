@@ -2,55 +2,55 @@
 
 // Mixins -----------------------------------
 .punctuation-mixin() {
-  .punctuation,
-  .bracket,
-  .brace {
+  .syntax--punctuation,
+  .syntax--bracket,
+  .syntax--brace {
     .uno-5();
   }
-  .string .punctuation {
+  .syntax--string .syntax--punctuation {
     .duo-3();
   }
 }
 
 // Default color -----------------------------------
 // Will be used by all languages when no other scope is defined.
-.source {
+.syntax--source {
   .uno-2();
 }
 
 // Uno hue -----------------------------------
 
-.html.elements,
-.entity,
-.tag,
-.function-call {
+.syntax--html.syntax--elements,
+.syntax--entity,
+.syntax--tag,
+.syntax--function-call {
   .uno-1();
 }
 
-.attribute-name,
-.character.escape {
+.syntax--attribute-name,
+.syntax--character.syntax--escape {
   .uno-3();
 }
 
-.support {
+.syntax--support {
   .uno-4();
 }
 
 // Uno hue -----------------------------------
 
-.variable {
+.syntax--variable {
   .uno-3();
 }
 
 // Duo hue -----------------------------------
-.string,
-.constant,
-.storage.type {
+.syntax--string,
+.syntax--constant,
+.syntax--storage.syntax--type {
   .duo-1();
 }
 
-.keyword,
-.storage {
+.syntax--keyword,
+.syntax--storage {
   .duo-2();
 }
 
@@ -60,12 +60,12 @@
 
 
 // Comments -----------------------------------
-.comment {
+.syntax--comment {
   .uno-4();
   font-style: italic;
 }
 
 
 // Text styles -----------------------------------
-.bold { font-weight: bold; }
-.italic { font-style: italic; }
+.syntax--bold { font-weight: bold; }
+.syntax--italic { font-style: italic; }
